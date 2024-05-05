@@ -1,3 +1,4 @@
+import AddToCartButton from "@/components/AddToCartButton";
 import ImageSlider from "@/components/ImageSlider";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ProductsReel from "@/components/ProductsReel";
@@ -136,10 +137,7 @@ const ProductPage = async ({ params }: ProductPageProps) => {
 					<div className="mt-10 lg:col-start-1 lg:row-start-2 lg:max-w-lg lg:self-start">
 						<div>
 							<div className="mt-10">
-								<Button className="w-full">
-									Добавить в корзину
-								</Button>
-								{/* <AddToCartButton /> */}
+								<AddToCartButton product={product} />
 							</div>
 
 							{product.category !== "flowers" ? (
